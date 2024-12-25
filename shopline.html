@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+        nav{
+            background-color: #EBF1F8;
+            padding: 15px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        
+        nav .user-info {
+            width: 100%;
+            padding-right: 16%;
+            margin: 10px 0 20px 0;
+            text-align: right;
+            justify-content:space-between;
+        }
+        nav .user-info a{
+            margin: 0 10px;
+        }
+        nav ul{
+            font-size: 0;
+            margin: 0 10px;
+            padding: 10px;
+        }
+
+        nav ul li{
+            display: inline-block;
+            margin: 0 20px;     
+        }
+        
+        nav button{
+            background-color: #EBF1F8;
+            border: none;
+            color: #052855;
+            font-size: 16px;        
+        }
+        nav a{
+            color: #052855;   
+            text-decoration: none;
+            font-size: 16px;  
+        }
+
+        nav .logo{
+            width: 160px;
+            height: 27px; 
+            padding: 10px;
+        }
+        nav .logo img{
+            width: 100%;
+            vertical-align: top;
+        }
+        .NavBlueBtn{
+            background-color: #0061FF;
+            padding: 15px 40px;
+            color: white;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+        .NavBlueBtn:hover{
+            background-color:#052855;
+            
+        }
+        .banner{
+            background-color: #EBF1F8;
+            padding: 50px;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .content{
+            width: 50%;
+            color: #052855;
+        }
+        .desc div{
+            display: inline-block;
+        }
+        .desc div span{
+            color:#3D8DD1;
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="user-info">
+            <a href="">登入</a>
+            <button>🌐台灣</button>
+        </div>
+        <div class="logo">
+            <img src="shopline/logo.png" alt="">
+        </div>
+        <ul>
+            <li><a href="#">產品核心</a></li>
+            <li><button>新手上路</button></li>
+            <li><button>開店服務</button></li>
+            <li><button>行銷推廣</button></li>
+            <li><button>營運管理</button></li>
+            <li><button>方案費用</button></li>
+            <li><button>更多資源</button></li>
+            <li><a href="#" class="NavBlueBtn">免費試用</a></li>
+        </ul>
+    </nav>
+    <div class="banner">
+        <div class="content">
+            <h1>想在哪開店創業？ 
+                <div class="desc">
+                    不管是 <div><span>網路開店</span></div>
+                </div>SHOPLINE 一站輕鬆開賣</h1>
+            <p>從個人賣家到國際品牌，都能以 SHOPLINE 實現全通路零售，快速拓展市場到世界各地，輕鬆開始你的『 店 』商生意！</p>
+            <a href="#">免費試用14天</a>
+            <span>*無需綁定信用卡提供付款資訊</span>
+        </div>
+        <div class="img-box"><img src="https://fakeimg.pl/300x200/200"></div>
+
+    </div>
+</body>
+</html>
