@@ -132,7 +132,7 @@
 
         document.querySelector("#guessBtn").addEventListener("click",function() {
             const number = parseInt(document.querySelector(".output").textContent);
-            if(number>max || number<min){
+            if(number>=max || number<=min){
                 alert("請輸入有效範圍的數字");
             }
             else{
@@ -144,7 +144,7 @@
                     min = number;
                     document.querySelector(".range").textContent =`Range: ${min}-${max}`;
                 }
-                else{
+                else if(number===answer) {
                     document.querySelector(".range").textContent =`Bingo!!! is ${number}`;
                     alert(`Bingo!!! 是${number}`);
                 }
