@@ -97,23 +97,23 @@
         </div>
         <div class="button_area mx-auto d-grid gap-2">
             <div class="col4 ">
-                <button class="btn btn-light numBtn" id="N7Btn" data-val="7">七</button>
-                <button class="btn btn-light numBtn" id="N8Btn" data-val="8">八</button>
-                <button class="btn btn-light numBtn" id="N9Btn" data-val="9">九</button>
+                <button class="btn btn-light numBtn" data-val="7">七</button>
+                <button class="btn btn-light numBtn" data-val="8">八</button>
+                <button class="btn btn-light numBtn" data-val="9">九</button>
             </div>
             <div class="col4">
-                <button class="btn btn-light numBtn" id="N4Btn" data-val="4">四</button>
-                <button class="btn btn-light numBtn" id="N5Btn" data-val="5">五</button>
-                <button class="btn btn-light numBtn" id="N6Btn" data-val="6">六</button>
+                <button class="btn btn-light numBtn" data-val="4">四</button>
+                <button class="btn btn-light numBtn" data-val="5">五</button>
+                <button class="btn btn-light numBtn" data-val="6">六</button>
             </div>
             <div class="col4">
-                <button class="btn btn-light numBtn" id="N1Btn" data-val="1">一</button>
-                <button class="btn btn-light numBtn" id="N2Btn" data-val="2">二</button>
-                <button class="btn btn-light numBtn" id="N3Btn" data-val="3">三</button>
+                <button class="btn btn-light numBtn" data-val="1">一</button>
+                <button class="btn btn-light numBtn" data-val="2">二</button>
+                <button class="btn btn-light numBtn" data-val="3">三</button>
             </div>
             <div class="col4">
                 <button class="btn btn-danger" id="clearBtn">✗</button>
-                <button class="btn btn-light numBtn" id="N0Btn" data-val="0">零</button>
+                <button class="btn btn-light numBtn" data-val="0">零</button>
                 <button class="btn btn-success" id="guessBtn">✓</button>
             </div>
             <div class="col4">
@@ -193,21 +193,15 @@
         };
 
         function setNumBtn(num){
-            document.getElementById("N0Btn").disabled = num;
-            document.getElementById("N1Btn").disabled = num;
-            document.getElementById("N2Btn").disabled = num;
-            document.getElementById("N3Btn").disabled = num;
-            document.getElementById("N4Btn").disabled = num;
-            document.getElementById("N5Btn").disabled = num;
-            document.getElementById("N6Btn").disabled = num;
-            document.getElementById("N7Btn").disabled = num;
-            document.getElementById("N8Btn").disabled = num;
-            document.getElementById("N9Btn").disabled = num;
+
+            const buttons = document.querySelectorAll(".numBtn");
+            buttons.forEach(button => {
+                button.disabled = num;
+            });
             document.getElementById("clearBtn").disabled = num;
             document.getElementById("guessBtn").disabled = num;
         }
 
-        
     </script>
   </body>
 </html>
