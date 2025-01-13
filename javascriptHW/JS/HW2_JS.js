@@ -94,7 +94,6 @@ function showGameText(msg=""){
 
 function guess(){
     const userInputText =document.querySelector("input").value.trim();
-    console.log(`input${userInputText}`);
     aNum=0;
     bNum=0;
 
@@ -103,7 +102,7 @@ function guess(){
         showGameText("文字框未輸入數字");
         return;
     }
-    if(document.querySelector("input").value.length >4 || new Set(userInputText.split('')).size!=4){
+    if(document.querySelector("input").value.length >4 || new Set(userInputText).size!=4){
         gameMsgModel.querySelector(".modal-title").textContent = "輸入有誤";
         showGameText("請輸入4個不重複的數字");
         return;
@@ -141,5 +140,5 @@ function setBtnStatus(num){
     document.getElementById("us_input").disabled =num;
     document.getElementById("guess_Btn").disabled=num;
     document.getElementById("ansBtn").disabled=num;
-    document.getElementById("resBtn").disabled=num;
+    document.getElementById("reBtn").disabled=num;
 }
