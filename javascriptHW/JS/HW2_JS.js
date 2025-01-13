@@ -4,6 +4,9 @@ let answer = 0;
 let aNum;
 let bNum;
 
+window.addEventListener('load', function () {
+    setBtnStatus(1);
+})
 
 document.querySelector(".guessBtn").addEventListener("click",()=>{
     guess();
@@ -11,7 +14,7 @@ document.querySelector(".guessBtn").addEventListener("click",()=>{
 
 document.querySelector("#StartBtn").addEventListener("click", () => {
   answer = getAnswerNum().join("");
-  
+  setBtnStatus(0);
 });
 
 document.querySelector("#ansBtn").addEventListener("click", ()=>{
@@ -23,6 +26,7 @@ document.querySelector("#reBtn").addEventListener("click",()=>{
     delLog();
     gameMsgModel.querySelector(".modal-title").textContent = "重來";
     showGameText(`請按下"開始"遊玩新的一局遊戲`);
+    setBtnStatus(1);
     
 })
 
@@ -125,8 +129,17 @@ function guess(){
     showLog();
     if(aNum===4){
         gameMsgModel.querySelector(".modal-title").textContent = "Congratulations!!!";
-        showGameText(`猜對答案: ${userInputText}`);
+        showGameText(`猜對答案: ${userInputText}，請按下"重新一局"開始新遊戲`);
+        document.getElementById("us_input").disabled =true;
+        document.getElementById("guess_Btn").disabled=true;
     }
     document.querySelector("input").value="";
 }
 
+function setBtnStatus(num){
+    document.getElementById("StartBtn").disabled =!num;
+    document.getElementById("us_input").disabled =num;
+    document.getElementById("guess_Btn").disabled=num;
+    document.getElementById("ansBtn").disabled=num;
+    document.getElementById("resBtn").disabled=num;
+}
