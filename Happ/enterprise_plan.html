@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>小樹屋demo</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css"
+    />
+
+    <link rel="stylesheet" href="./css/enterprise_plan.css" />
+  </head>
+  <body>
+    <header class="sticky-top">
+      <nav class="navbar navbar-expand-lg bg-white">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./index.html">
+            <img src="./projectIMG/happ_logo.svg" style="width: 152px;height: 32px;"/>
+          </a>
+          <button
+            class="navbar-toggler btn rounded-pill btn-secondary bg-secondary text-white"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fa-solid fa-bars me-1"></i>
+            <i class="fa-solid fa-user"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item d-lg-none">
+                <a class="nav-link" href="#">登入</a>
+              </li>
+              <li class="nav-item d-lg-none">
+                <a class="nav-link" href="#">註冊</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">瀏覽空間</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./enterprise_plan.html" id="thisPage"
+                  >企業辦公專案</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">暢遊方案</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">空間靈感</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">最愛空間</a>
+              </li>
+              <li class="nav-item dropdown d-none d-lg-flex">
+                <a
+                  class="nav-link dropdown-toggle btn rounded-pill btn-secondary bg-secondary text-white"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <i class="fa-solid fa-bars me-1"></i>
+                  <i class="fa-solid fa-user"></i>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end">
+                  <li><a class="dropdown-item" href="#">登入</a></li>
+                  <li><a class="dropdown-item" href="#">註冊</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li><a class="dropdown-item" href="#">儲值點數</a></li>
+                  <li><a class="dropdown-item" href="#">常見問答</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <article class="banner">
+      <div class="banner-container">
+        <div class="banner-text">
+          <h1>隨時進駐、租期彈性<br />為團隊找到高效辦公室空間</h1>
+          <p>
+            Happ.
+            小樹屋「彈性辦公方案」為您的團隊準備交通便利、設備完善的辦公空間租借服務，從租期長短、地理位置到空間配置皆可彈性客製，助您輕鬆解決辦公空間難題。
+          </p>
+        </div>
+        <button>了解詳情</button>
+      </div>
+    </article>
+    <article class="conatainer feature w-100">
+      <div class="feature-container mx-auto">
+        <h2>為任何辦公需求 提供最佳空間選擇</h2>
+        <p>
+          隨著遠端、混合辦公漸漸成為主流，傳統辦公室的僵固租約已漸漸不符需求。Happ.
+          小樹屋提供更具彈性的辦公室租借方案，協助企業與團隊找到最適合的辦公空間與租期方案，提高工作效率的同時節省成本，將資源集中在打造最好的服務與產品。
+        </p>
+        <ul class="features-list pt-3">
+          <li class="item d-flex pb-5">
+            <div class="img-box d-none d-lg-block">
+              <img src="./projectIMG/section_1.jpg" />
+            </div>
+            <div class="item-info ps-lg-4 ps-0">
+              <p class="fs-5 fw-bold text-black">
+                小型工作室｜新創團隊、影音創作、美業工作室
+              </p>
+              <div class="img-box d-lg-none">
+                <img src="./projectIMG/section_3.jpg" />
+              </div>
+              <p class="pt-4 pt-lg-0">
+                為剛起步的小型團隊打造的工作室空間，從新創團隊、影音創作者團隊的辦公據點，到美業工作者的專屬工作室，從我們精心設計的空間裡找到最適合您的那一個！
+              </p>
+              <ul class="info-list">
+                <li class="info-item">適合人數：約 1~5 人</li>
+                <li class="info-item">交通便利、接待客戶無負擔</li>
+                <li class="info-item">各式器材、辦公設備輕鬆進駐</li>
+                <li class="info-item">可任意調整空間格局、桌椅配置</li>
+                <li class="info-item">短租、長租方案皆可彈性調整</li>
+              </ul>
+            </div>
+          </li>
+          <li class="item d-flex pb-5">
+            <div class="img-box d-none d-lg-block">
+              <img src="./projectIMG/section_2.jpg" />
+            </div>
+            <div class="item-info ps-lg-4 ps-0">
+              <p class="fs-5 fw-bold text-black">
+                中小型辦公室｜團隊擴編、臨時辦公室選擇
+              </p>
+              <div class="img-box d-lg-none">
+                <img src="./projectIMG/section_3.jpg" />
+              </div>
+              <p class="pt-4 pt-lg-0">
+                無論是團隊擴編需要更多座位，或是原辦公室裝潢施工、成立專案辦公室，以及舉辦實體活動等臨時空間需求，讓精緻美觀的小樹屋空間成為您的辦公室空間。
+              </p>
+              <ul class="info-list">
+                <li class="info-item">適合人數：約 6~20 人</li>
+                <li class="info-item">辦公桌椅、投影、白板等設備齊全</li>
+                <li class="info-item">專屬門禁密碼，隱私安全保障</li>
+                <li class="info-item">專屬門禁密碼，隱私安全保障</li>
+                <li class="info-item">可依團隊需求配置家具或空間格局</li>
+              </ul>
+            </div>
+          </li>
+          <li class="item d-flex pb-5">
+            <div class="img-box d-none d-lg-block">
+              <img src="./projectIMG/section_3.jpg" />
+            </div>
+            <div class="item-info ps-lg-4 ps-0">
+              <p class="fs-5 fw-bold text-black">獨戶辦公室</p>
+              <div class="img-box d-lg-none">
+                <img src="./projectIMG/section_3.jpg" />
+              </div>
+              <p class="pt-4 pt-lg-0">
+                除了中小型空間以外，小樹屋亦有提供機能完善、精緻裝潢的獨戶辦公室，為您的團隊成員提供獨立完整的空間，在安心、舒適的空間裡發揮最高效率。
+              </p>
+              <ul class="info-list">
+                <li class="info-item">適合人數：依需求洽詢合適物件</li>
+                <li class="info-item">明亮開闊裝潢，提供舒適工作體驗</li>
+                <li class="info-item">辦公格局機能完善，設備一應俱全</li>
+                <li class="info-item">獨戶辦公室提供充足隱私與專屬空間</li>
+                <li class="info-item">搭配周邊小樹屋空間，無限拓展會議室</li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+        <div class="feature-outro d-lg-flex mb-5">
+          <div class="context">
+            <p>輕鬆找到合適辦公空間，把時間留給更重要的工作，</p>
+            <p><strong>Happ. 小樹屋企業空間顧問，協助您解決空間難題</strong></p>
+          </div>
+          <a href="#" class="mt-3 mt-lg-0"><button>立刻免費諮詢</button></a>
+        </div>
+      </div>
+    </article>
+    <article class="container choice">
+      <div class="choice-container">
+        <h2 class="fs-4 text-success mb-2">為什麼選擇小樹屋？</h2>
+        <p class="text-secondary">
+          Happ. 小樹屋擁有超過 300+ 物件，依您的需求提供最合適的辦公空間，<br />同時提供租期上的高度彈性，為您客製化最佳辦公室方案！
+        </p>
+        <ul class="choice-list d-lg-flex justify-content-lg-between pt-2">
+          <li class="item mb-4 mb-lg-0">
+            <div class="item-imgBox">
+              <img src="./projectIMG/choice_1.webp" class="mw-100" />
+            </div>
+            <p class="text-center fw-bold fs-5">節省成本</p>
+            <ul class="item-advantage text-center">
+              <li>
+                <i class="fa-solid fa-check me-2" style="color: #2ca33b"></i
+                >閒置未使用時段無須付租金
+              </li>
+              <li>
+                <i class="fa-solid fa-check me-2" style="color: #2ca33b"></i
+                >只租平日也可以的彈性方案
+              </li>
+              <li>
+                <i class="fa-solid fa-check me-2" style="color: #2ca33b"></i
+                >不綁約，年租月租自由選擇
+              </li>
+            </ul>
+          </li>
+          <li class="item mb-4 mb-lg-0">
+            <div class="item-imgBox">
+              <img src="./projectIMG/choice_2.webp" class="mw-100" />
+            </div>
+            <p class="text-center fw-bold fs-5">隨時進駐</p>
+            <ul class="item-advantage text-center">
+              <li>
+                <i class="fa-solid fa-check me-2" style="color: #2ca33b"></i
+                >300+ 辦公室物件任您選擇
+              </li>
+              <li>
+                <i class="fa-solid fa-check me-2" style="color: #2ca33b"></i
+                >只要攜帶電腦即可輕鬆進駐
+              </li>
+              <li>
+                <i class="fa-solid fa-check me-2" style="color: #2ca33b"></i
+                >裝設智慧門禁鎖，保障隱私
+              </li>
+            </ul>
+          </li>
+          <li class="item mb-4 mb-lg-0">
+            <div class="item-imgBox">
+              <img src="./projectIMG/choice_1.webp" class="mw-100" />
+            </div>
+            <p class="text-center fw-bold fs-5">專業服務</p>
+            <ul class="item-advantage text-center">
+              <li>
+                <i class="fa-solid fa-check me-2" style="color: #2ca33b"></i
+                >專屬企業空間顧問提供服務
+              </li>
+              <li>
+                <i class="fa-solid fa-check me-2" style="color: #2ca33b"></i
+                >服務 100+ 組企業口碑推薦
+              </li>
+              <li>
+                <i class="fa-solid fa-check me-2" style="color: #2ca33b"></i
+                >長租客戶獨享行銷曝光資源
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </article>
+    <article class="container-fluid group">
+      <div class="group-container d-flex">
+        <div class="info">
+          <h2 class="mb-4">現在就為團隊打造高效辦公空間！</h2>
+          <p class="text-secondary">
+            如對方案選擇、物件詳情或空間規劃有任何疑問，歡迎隨時填寫下方表單，免費與專屬顧問聯繫諮詢，讓我們進一步了解您的需求，並為您量身打造最合適的工作空間。<br /><br />
+            <span
+              >※初次使用小樹屋服務者，填表諮詢享免費體驗 2
+              小時一次，詳見表單內活動說明。</span
+            >
+          </p>
+          <a href="#"><button>填寫諮詢表單</button></a>
+        </div>
+        <div class="group-imgBox">
+          <img src="./projectIMG/footer.jpg">
+        </div>
+      </div>
+    </article>
+    <footer class="container-xl">
+      <div class="page-footer">
+        <div class="main-section">
+          <div class="img-box">
+            <img src="https://picsum.photos/id/2/300/200" />
+          </div>
+          <h3 class="my-4">讓每次推開門 都是一段絕無僅有的美好時光</h3>
+          <p>
+            Happ.
+            小樹屋想帶給你的不僅僅是空間，更是一段絕無僅有的時光；獻給每個「實現此刻」的你，讓美好的事物與回憶就此發生。
+          </p>
+        </div>
+        <div class="sub-section">
+          <h3>Happ. 小樹屋</h3>
+          <ul>
+            <li><a href="#">空間靈感</a></li>
+            <li><a href="#">品牌願景</a></li>
+            <li><a href="#">台南空間</a></li>
+            <li><a href="#">台中空間</a></li>
+            <li><a href="#">Sitemap</a></li>
+          </ul>
+        </div>
+        <div class="sub-section">
+          <h3>空間服務</h3>
+          <ul>
+            <li><a href="#">瀏覽空間</a></li>
+            <li><a href="#">最愛空間</a></li>
+            <li><a href="#">暢遊方案</a></li>
+            <li><a href="#">企業辦公專案</a></li>
+            <li><a href="#">常見問答</a></li>
+            <li><a href="#">儲值點數</a></li>
+          </ul>
+        </div>
+        <div class="sub-section">
+          <h3>會員條款</h3>
+          <ul>
+            <li><a href="#">使用者條款</a></li>
+            <li><a href="#">隱私權保護政策</a></li>
+            <li><a href="#">暢遊方案條款</a></li>
+            <li><a href="#">儲值點數說明</a></li>
+          </ul>
+        </div>
+        <div class="sub-section">
+          <h3>聯絡我們</h3>
+          <a href="#"
+            ><i class="fa-brands fa-line fa-xl" style="color: #0eaf29"></i
+          ></a>
+        </div>
+        <div class="footer-divide"></div>
+        <p>
+          © Happ. 小樹屋 好域股份有限公司 統一編號：52380939 All rights reserved
+        </p>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

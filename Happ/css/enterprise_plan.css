@@ -1,0 +1,427 @@
+header .dropdown-toggle::after {
+  content: none;
+}
+
+.banner {
+  height: 700px;
+  background-image: url(../projectIMG/banner.jpg);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+}
+.banner .banner-container {
+  margin: 0 auto;
+  width: 930px;
+}
+h1 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 24px;
+  color: #4a4a4a;
+  line-height: 1.5;
+}
+.banner .banner-container .banner-text {
+  font-size: 16px;
+  margin-bottom: 48px;
+  width: 50%;
+  color: #7a7a7a;
+}
+.banner .banner-container button {
+  border: unset;
+  background-color: #2ca33b;
+  color: #fff;
+  padding: 0 24px;
+  border-radius: 5px;
+  height: 50px;
+}
+.banner .banner-container button:hover {
+  background-color: #2eab3e;
+}
+.feature,
+.choice {
+  margin-top: 80px;
+}
+.feature .feature-container {
+  width: 930px;
+}
+.feature .feature-container h2 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #2ca33b;
+  margin-bottom: 12px;
+}
+.feature .feature-container > p {
+  color: #7a7a7a;
+}
+.feature .feature-container ul {
+  list-style: none;
+  padding: 0;
+}
+.feature .feature-container ul li .img-box {
+  width: 500px;
+}
+.feature-container ul li .img-box img {
+  width: 100%;
+  object-fit: contain;
+}
+.features-list .item .item-info {
+  width: 50%;
+}
+.info-list li::before {
+  content: ">";
+  width: 16px;
+  height: 16px;
+  font-size: 14px;
+  aspect-ratio: 1/1;
+  display: inline-block;
+  color: #fff;
+  background-color: #45aa5c;
+  border-radius: 50%;
+  text-align: center;
+  margin-right: 5px;
+  vertical-align: middle;
+  line-height: 15px;
+}
+.features-list li:nth-child(2) .info-list li::before {
+  background-color: #f4c00b;
+}
+.features-list li:nth-child(3) .info-list li::before {
+  background-color: #7fccff;
+}
+.feature-outro {
+  width: 640px;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  padding: 18px;
+  margin: 0 auto;
+}
+.context p {
+  margin-bottom: 0;
+}
+.context p strong {
+  color: #2ca33b;
+}
+.feature-container .feature-outro a {
+  text-decoration: none;
+  display: inline-block;
+  margin-left: 12px;
+  width: 30%;
+  flex-grow: 1;
+}
+.feature-container .feature-outro a button {
+  background-color: #2ca33b;
+  color: #fff;
+  text-align: center;
+  border: unset;
+  border-radius: 8px;
+  width: 100%;
+  height: 100%;
+}
+.feature-container .feature-outro a button:hover {
+  background-color: #2eab3e;
+}
+.choice {
+  background-color: #f9f9f9;
+  width: 100%;
+  max-width: unset;
+  padding-top: 72px;
+  padding-bottom: 70px;
+}
+.choice .choice-container {
+  width: 930px;
+  margin: 0 auto;
+}
+.choice ul {
+  list-style: none;
+  padding: 0;
+}
+.choice-list .item {
+  background-color: #fff;
+  padding: 24px 28px;
+  border-radius: 12px;
+}
+.choice-list .item .item-imgBox {
+  width: 210px;
+  margin: 0 auto;
+}
+.choice-list .item .item-advantage li {
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+.group {
+  padding: 60px 48px;
+}
+
+.group .group-container {
+  width: 930px;
+  margin: 0 auto;
+}
+.group-container .info {
+  margin-right: 32px;
+}
+.group-container .info h2 {
+  font-size: 22px;
+}
+.group-container .info p {
+  margin-bottom: 36px;
+}
+.group-container .info a button {
+  background-color: #2ca33b;
+  color: #fff;
+  border-radius: 10px;
+  width: 130px;
+  height: 45px;
+  font-size: 14px;
+  border: unset;
+}
+.group-container .info a button:hover {
+  background-color: #2eab3e;
+}
+.group-container .group-imgBox {
+  width: 73%;
+  object-fit: contain;
+  display: flex;
+}
+.group-container .group-imgBox img {
+  align-self: center;
+  justify-content: center;
+}
+.footer-container .home-footer {
+  width: 100%;
+  background-image: url(../indexIMG/background_footer_banner.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  padding: 115px 0 80px;
+}
+.footer-container .home-footer h2 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #4a4a4a;
+  margin: 0 0 15px;
+}
+.footer-container .home-footer p {
+  font-size: 15px;
+  letter-spacing: 0.2px;
+  color: #4a4a4a;
+  margin: 0 0 25px;
+}
+.footer-container .home-footer a {
+  display: block;
+  width: fit-content;
+  text-decoration: none;
+  padding: 15px 30px;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+
+footer.container-xl {
+  max-width: unset;
+  width: 100%;
+  padding: 50px 10%;
+  background-color: #f7f7f7;
+}
+footer .page-footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+footer .page-footer .main-section {
+  width: 33%;
+}
+
+footer .page-footer p {
+  width: 100%;
+  font-size: 12px;
+  color: #4a4a4a;
+}
+footer .page-footer .main-section .img-box {
+  width: 130px;
+  height: 25px;
+  margin: 0 0 15px;
+}
+
+footer .page-footer .main-section .img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+footer .page-footer .main-section h3 {
+  font-size: 15px;
+  color: #4a4a4a;
+  font-weight: 550;
+  margin: 0 0 20px;
+}
+footer .page-footer .footer-divide {
+  width: 100%;
+  margin: 36px 0 18px;
+  border-bottom: 1px solid #c4c4c4;
+}
+footer .page-footer .main-section p {
+  font-size: 13px;
+  color: #7a7a7a;
+  width: 100%;
+}
+footer .page-footer .sub-section h3 {
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0 0 10px;
+  color: #4a4a4a;
+}
+
+footer .page-footer .sub-section ul {
+  list-style: none;
+  padding: 0;
+}
+footer .page-footer .sub-section ul li {
+  padding: 10px 0;
+}
+footer .page-footer .sub-section ul li a {
+  text-decoration: none;
+  font-size: 13px;
+  color: #4a4a4a;
+}
+
+footer .page-footer .sub-section ul li a:hover {
+  font-weight: bold;
+  color: black;
+}
+
+/* 設定手機板*/
+@media screen and (max-width: 991px) {
+  /* 設定dropdown內容文字置中 */
+  header .navbar-nav .nav-link {
+    text-align: center;
+  }
+  header .navbar-nav .nav-link:hover {
+    background-color: #f4f4f4;
+    background: none;
+  }
+  .banner {
+    height: 385px;
+    background: none;
+    position: relative;
+  }
+  .banner::before {
+    content: "";
+    background-image: url(../projectIMG/banner.jpg);
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+    position: absolute;
+    opacity: 0.3;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    top: 0;
+  }
+
+  .banner .banner-container {
+    width: 80%;
+  }
+  .banner .banner-container .banner-text {
+    width: unset;
+    margin-bottom: 20px;
+  }
+  h1 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  .banner-text p {
+    width: 100%;
+    font-size: 14px;
+  }
+  .feature .feature-container {
+    width: 80%;
+  }
+  .features-list .item .item-info {
+    width: 100%;
+  }
+  .features-list .item .item-info .img-box {
+    width: 100%;
+    display: block;
+    object-fit: contain;
+  }
+  .feature-container .feature-outro {
+    width: 100%;
+  }
+  .feature-container .feature-outro .context {
+    text-align: center;
+  }
+  .feature-container .feature-outro a {
+    width: 100%;
+  }
+  .feature-container .feature-outro a button {
+    height: 45px;
+  }
+  .choice .choice-container {
+    min-width: unset;
+    width: 80%;
+  }
+  .group {
+    padding: 60px 0;
+    position: relative;
+  }
+  
+  .group .group-container {
+    min-width: unset;
+    width: 80%;
+  }
+
+  .group::before {
+    content: "";
+    background-image: url(../projectIMG/footer-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    position: absolute;
+    opacity: 0.3;
+    z-index: -2;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+  }
+  .group-container .info {
+    margin-right: 0;
+  }
+  .group-container .group-imgBox {
+    display: none;
+  }
+  footer .page-footer .sub-section{
+    width: 100%;
+    padding: 30px 0;
+    border-bottom: 1px solid #c4c4c4;
+  }
+  footer .page-footer .footer-divide{
+    border-bottom: 1px solid #c4c4c4;
+  }
+  footer .page-footer .main-section h3, 
+  footer .page-footer .sub-section  h3{
+    font-size: 16px;
+  }
+
+  footer .page-footer .sub-section ul li a {
+    font-size: 15px;
+  }
+}
+
+/* 設定桌面板*/
+@media screen and (min-width: 992px) {
+  header .navbar-nav .nav-link:hover {
+    color: #2ca33b;
+  }
+
+  #thisPage {
+    color: #2ca33b;
+  }
+
+  .features-list li:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+}
