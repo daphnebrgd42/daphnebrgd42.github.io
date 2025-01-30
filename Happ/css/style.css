@@ -483,15 +483,17 @@ footer .page-footer .sub-section ul li a:hover {
 
   .recommend-container .recommend_list {
     flex-wrap: nowrap;
-    overflow-x: hidden;
+    overflow-x: auto;
     overflow-y: hidden;
     width: auto;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
+    scrollbar-width: none;
   }
   .recommend-container .recommend_list .recommend-item {
     min-width: 85vw;
     margin: 0 15px 0 0;
+    scroll-snap-align: start;
   }
   .home-promote-container .home-promote {
     flex-direction: column-reverse;
