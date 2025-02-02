@@ -409,6 +409,13 @@ footer .page-footer .sub-section ul li a:hover {
   footer .page-footer .sub-section ul li a {
     font-size: 15px;
   }
+  footer .page-footer .main-section {
+    width: 100%;
+    margin: 0 0 15px;
+  }
+  footer .page-footer .main-section p {
+    display: none;
+  }
 }
 
 /* 設定桌面板*/
