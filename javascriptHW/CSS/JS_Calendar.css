@@ -1,0 +1,19 @@
+#calendar {
+  width: 1280px;
+}
+
+table tbody tr td {
+  height: 110px;
+  width: 14%;
+  
+}
+table tbody tr td ul{
+  
+  text-align: start;
+  padding-left: 20px;
+  
+}
+
+table tbody tr td:hover {
+  background-color: rgba(112, 60, 202, 0.1);
+}
