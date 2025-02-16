@@ -7,6 +7,7 @@ const swiper = new Swiper(".poster.swiper", {
     prevEl: ".pre-btn",
   },
   breakpoints: {
+    
     992: {
       slidesPerView: 5,
       slidesPerGroup: 2,
