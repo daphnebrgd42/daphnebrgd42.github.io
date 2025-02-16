@@ -17,9 +17,9 @@ const city_swiper = new Swiper(".tw-top-cities.poster.swiper", {
 });
 
 const discount_swiper = new Swiper(".discounts.poster.swiper", {
-    slidesPerView:2,
+    slidesPerView:1,
     freeMode: true,
-    spaceBetween: 3,
+    width:350,
     navigation: {
       nextEl: ".next-btn",
       prevEl: ".pre-btn",

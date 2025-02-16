@@ -245,7 +245,7 @@ footer .footer-text p {
 
   .banner .banner_container .search-form {
     align-content: center;
-    padding: 48px 64px;
+    padding: 48px 12px;
   }
   .banner .banner_container .search-form button {
     font-size: 20px;
@@ -258,12 +258,17 @@ footer .footer-text p {
   .homebody .tw-top-cities {
     width: 100%;
   }
+  .hotels .buttons {
+    font-size: 8px;
+  }
   .hotels .hotel-wrapper {
     overflow-x: scroll;
-    
   }
   .hotels .hotel-wrapper::-webkit-scrollbar {
     display: none;
+  }
+  footer .footer-text{
+    width: 350px;
   }
 }
 /* 桌面版 */
