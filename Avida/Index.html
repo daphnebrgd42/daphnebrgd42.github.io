@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Avida</title>
+    <link rel="icon" href="./images/icon.ico" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+
+  <body>
+    <header class="main-header">
+      <section class="header-container">
+        <nav class="navbar navbar-expand-lg bg-light">
+          <div class="container-fluid">
+            <div class="header-left me-auto d-flex">
+              <a class="navbar-brand me-0" href="./Index.html">
+                <div class="header-imgbox">
+                  <img
+                    src="./images/IndexImgs/header_logo.svg"
+                    alt="Logo"
+                    class="w-100 h-100"
+                  />
+                </div>
+              </a>
+              <ul class="navbar-nav d-none d-lg-flex">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">搜好房</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">優惠專區</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="header-right d-block d-lg-flex">
+              <!-- 小螢幕顯示的button -->
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <i class="navbar-toggler-icon"></i>
+              </button>
+
+              <button
+                class="btn btn-outline-primary rounded-pill d-none d-lg-block"
+              >
+                <span class="text-center">刊登家中空房</span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                  <li class="nav-item d-lg-none">
+                    <p class="dropdown-header">登入後，價格更優惠!</p>
+                  </li>
+                  <li class="nav-item d-lg-none">
+                    <button
+                      class="btn btn-outline-primary rounded-pill d-lg-none"
+                    >
+                      登入 | 註冊
+                    </button>
+                  </li>
+                  <li class="nav-item">
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li class="nav-item d-lg-none">
+                    <p class="dropdown-header">享優惠&賺回饋</p>
+                  </li>
+                  <li class="nav-item d-lg-none">
+                    <a class="nav-link" href="#">優惠專區</a>
+                  </li>
+
+                  <li class="nav-item dropdown d-none d-lg-flex">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      <i class="navbar-toggler-icon"></i>
+                    </a>
+                    <!-- 會員登入前 -->
+                    <ul class="dropdown-menu dropdown-menu-end">
+                      <li>
+                        <a class="dropdown-item" href="#">管理訂單</a>
+                      </li>
+                      <li><p class="dropdown-header">我要登入</p></li>
+                      <button class="btn btn-outline-primary">
+                        登入 | 註冊
+                      </button>
+                      <li><hr class="dropdown-divider d-lg-none" /></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </section>
+    </header>
+    <section class="container-fluid banner px-0">
+      <div class="banner_bgIMG_wrapper"></div>
+      <div class="banner_container">
+        <h1 class="mt-2 mb-4 mb-lg-5 fs-2 text-center text-white fw-bold">
+          以優惠價格暢遊全世界
+        </h1>
+        <form class="search-form" action="">
+          <div class="input-group bg-white d-flex align-items-center">
+            <label for="">
+              <i class="bi bi-search"></i>
+            </label>
+            <input
+              id="location"
+              type="text"
+              class="form-control border-0"
+              placeholder="輸入城市、區域或住宿名稱..."
+            />
+          </div>
+          <div class="input-group bg-white d-flex align-items-center">
+            <label for="">
+              <i class="bi bi-calendar-check"></i>
+            </label>
+            <div class="form-control border-0 text-start">
+              <span class="fs-6">2025年2月28日</span>
+              <span class="text-secondary d-block">週五</span>
+            </div>
+            <label for="">
+              <i class="bi bi-calendar-check"></i>
+            </label>
+            <div class="form-control border-0 text-start">
+              <span class="fs-6">2025年3月1日</span>
+              <span class="text-secondary d-block">週六</span>
+            </div>
+          </div>
+          <div class="input-group bg-white d-flex align-items-center">
+            <label for="">
+              <i class="bi bi-people"></i>
+            </label>
+            <span class="d-inline d-lg-none">1間客房1位大人0位兒童</span>
+            <div class="d-none me-auto d-lg-inline">
+              <span class="d-none d-lg-inline">1位大人</span>
+              <span class="d-lg-block">1間客房</span>
+            </div>
+            <i class="bi bi-chevron-down d-none d-lg-inline-flex"></i>
+          </div>
+          <button class="btn btn-primary">搜出好價</button>
+        </form>
+      </div>
+    </section>
+    <section class="container homebody">
+      <div class="tw-top-cities poster swiper">
+        <h2 class="fs-4 fw-bold mb-4">台灣熱門城市</h2>
+        <div class="swiper-wrapper">
+          <div class="cites swiper-slide">
+            <a href="#" class="cites swiper-slide">
+              <div class="cities_imgBox">
+                <img src="./images/IndexImgs/Taipei.jpg" alt="" />
+              </div>
+              <h3>台北市</h3>
+              <span>3,566間住宿</span>
+            </a>
+          </div>
+          <div class="cites swiper-slide">
+            <a href="#" class="cites swiper-slide">
+              <div class="cities_imgBox">
+                <img src="./images/IndexImgs/Taichung.jpg" alt="" />
+              </div>
+              <h3>台中市</h3>
+              <span>1,918間住宿</span>
+            </a>
+          </div>
+          <div class="cites swiper-slide">
+            <a href="#" class="cites swiper-slide">
+              <div class="cities_imgBox">
+                <img src="./images/IndexImgs/Kaohsiung.jpg" alt="" />
+              </div>
+              <h3>高雄市</h3>
+              <span>1,171間住宿</span>
+            </a>
+          </div>
+          <div class="cites swiper-slide">
+            <a href="#" class="cites swiper-slide">
+              <div class="cities_imgBox">
+                <img src="./images/IndexImgs/Tainan.jpg" alt="" />
+              </div>
+              <h3>台南市</h3>
+              <span>1,877間住宿</span>
+            </a>
+          </div>
+          <div class="cites swiper-slide">
+            <a href="#" class="cites swiper-slide">
+              <div class="cities_imgBox">
+                <img src="./images/IndexImgs/Yilan.jpg" alt="" />
+              </div>
+              <h3>宜蘭縣</h3>
+              <span>2,548間住宿</span>
+            </a>
+          </div>
+          <div class="cites swiper-slide">
+            <a href="#" class="cites swiper-slide">
+              <div class="cities_imgBox">
+                <img src="./images/IndexImgs/Taoyuan.jpg" alt="" />
+              </div>
+              <h3>桃園市</h3>
+              <span>436間住宿</span>
+            </a>
+          </div>
+          <div class="cites swiper-slide">
+            <a href="#" class="cites swiper-slide">
+              <div class="cities_imgBox">
+                <img src="./images/IndexImgs/Chiayi.jpg" alt="" />
+              </div>
+              <h3>嘉義縣</h3>
+              <span>420間住宿</span>
+            </a>
+          </div>
+          <div class="cites swiper-slide">
+            <a href="#" class="cites swiper-slide">
+              <div class="cities_imgBox">
+                <img src="./images/IndexImgs/Nantou.jpg" alt="" />
+              </div>
+              <h3>南投縣</h3>
+              <span>1,213間住宿</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- If we need navigation buttons -->
+        <div class="pre-btn"><i class="bi bi-chevron-left"></i></div>
+        <div class="next-btn">
+          <i class="bi bi-chevron-right"></i>
+        </div>
+      </div>
+    </section>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
