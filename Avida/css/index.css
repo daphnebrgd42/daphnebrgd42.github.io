@@ -80,38 +80,42 @@ header .dropdown-toggle::after {
   margin: 0 125px;
   padding: 0;
 }
+.homebody .tw-top-cities {
+  margin: 64px 0;
+  width: auto;
+}
 .homebody .tw-top-cities .cites {
   width: 200px;
   height: auto;
   margin: 0 8px;
   padding: 0 0 16px;
 }
-.homebody .tw-top-cities .cites a {
+.homebody .tw-top-cities .cites .cityPage_link {
   text-decoration: none;
   text-align: center;
 }
 
-.homebody .tw-top-cities .cites a:hover {
+.homebody .tw-top-cities .cites .cityPage_link:hover {
   text-decoration: underline #5392f9;
 }
-.homebody .tw-top-cities .cites a h3 {
+.homebody .tw-top-cities .cites .cityPage_link h3 {
   font-size: 16px;
   color: #252c38;
   margin: 10px 0 -1px;
 }
-.homebody .tw-top-cities .cites a span {
+.homebody .tw-top-cities .cites .cityPage_link span {
   font-size: 12px;
   color: #252c38;
   display: block;
   margin: 3px 0 -1px;
 }
-.homebody .tw-top-cities .cites .cities_imgBox {
+.homebody .tw-top-cities .cites .city_imgBox {
   width: 200px;
   height: 200px;
   border-radius: 16px;
   overflow: hidden;
 }
-.homebody .tw-top-cities .cites .cities_imgBox img {
+.homebody .tw-top-cities .cites .city_imgBox img {
   width: 100%;
 }
 
@@ -129,8 +133,12 @@ header .dropdown-toggle::after {
   line-height: 50px;
   z-index: 1;
   text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 8px 3px;
 }
-
+.homebody .next-btn:hover,
+.homebody .pre-btn:hover {
+  background-color: #eeeeef;
+}
 .homebody .pre-btn {
   left: 20px;
 }
