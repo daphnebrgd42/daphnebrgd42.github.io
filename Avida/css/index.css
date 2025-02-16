@@ -152,7 +152,9 @@ header .dropdown-toggle::after {
     background-image: url(../images/IndexImgs/phone_bg_homepage.jpg);
     background-size: 100% 100%;
     background-position: 0px 0px;
+    background-repeat: no-repeat;
     height: 80vh;
+    min-width: 580px;
   }
   .banner .banner_container .search-form {
     margin: 8px 12px 32px;
