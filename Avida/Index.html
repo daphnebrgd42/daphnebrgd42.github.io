@@ -24,7 +24,7 @@
 
   <body>
     <header class="main-header">
-      <section class="header-container">
+      <div class="header-container">
         <nav class="navbar navbar-expand-lg bg-light">
           <div class="container-fluid">
             <div class="header-left me-auto d-flex">
@@ -115,7 +115,7 @@
             </div>
           </div>
         </nav>
-      </section>
+      </div>
     </header>
     <section class="container-fluid banner px-0">
       <div class="banner_bgIMG_wrapper"></div>
@@ -123,47 +123,49 @@
         <h1 class="mt-2 mb-4 mb-lg-5 fs-2 text-center text-white fw-bold">
           以優惠價格暢遊全世界
         </h1>
-        <form class="search-form" action="">
-          <div class="input-group bg-white d-flex align-items-center">
-            <label for="">
-              <i class="bi bi-search"></i>
-            </label>
-            <input
-              id="location"
-              type="text"
-              class="form-control border-0"
-              placeholder="輸入城市、區域或住宿名稱..."
-            />
-          </div>
-          <div class="input-group bg-white d-flex align-items-center">
-            <label for="">
-              <i class="bi bi-calendar-check"></i>
-            </label>
-            <div class="form-control border-0 text-start">
-              <span class="fs-6">2025年2月28日</span>
-              <span class="text-secondary d-block">週五</span>
+        <div class="form-container">
+          <form class="search-form" action="">
+            <div class="input-group bg-white d-flex align-items-center">
+              <label for="">
+                <i class="bi bi-search"></i>
+              </label>
+              <input
+                id="location"
+                type="text"
+                class="form-control border-0"
+                placeholder="輸入城市、區域或住宿名稱..."
+              />
             </div>
-            <label for="">
-              <i class="bi bi-calendar-check"></i>
-            </label>
-            <div class="form-control border-0 text-start">
-              <span class="fs-6">2025年3月1日</span>
-              <span class="text-secondary d-block">週六</span>
+            <div class="input-group bg-white d-flex align-items-center">
+              <label for="">
+                <i class="bi bi-calendar-check"></i>
+              </label>
+              <div class="form-control date border-0 text-start">
+                <span class="fs-6">2025年2月28日</span>
+                <span class="text-secondary d-block">週五</span>
+              </div>
+              <label for="">
+                <i class="bi bi-calendar-check"></i>
+              </label>
+              <div class="form-control date border-0 text-start">
+                <span class="fs-6">2025年3月1日</span>
+                <span class="text-secondary d-block">週六</span>
+              </div>
             </div>
-          </div>
-          <div class="input-group bg-white d-flex align-items-center">
-            <label for="">
-              <i class="bi bi-people"></i>
-            </label>
-            <span class="d-inline d-lg-none">1間客房1位大人0位兒童</span>
-            <div class="d-none me-auto d-lg-inline">
-              <span class="d-none d-lg-inline">1位大人</span>
-              <span class="d-lg-block">1間客房</span>
+            <div class="input-group bg-white d-flex align-items-center">
+              <label for="">
+                <i class="bi bi-people"></i>
+              </label>
+              <span class="d-inline d-lg-none">1間客房1位大人0位兒童</span>
+              <div class="d-none me-auto d-lg-inline">
+                <span class="d-none d-lg-inline">1位大人</span>
+                <span class="d-lg-block">1間客房</span>
+              </div>
+              <i class="bi bi-chevron-down d-none d-lg-inline-flex"></i>
             </div>
-            <i class="bi bi-chevron-down d-none d-lg-inline-flex"></i>
-          </div>
-          <button class="btn btn-primary">搜出好價</button>
-        </form>
+            <button class="btn btn-primary">搜出好價</button>
+          </form>
+        </div>
       </div>
     </section>
     <section class="container homebody">
@@ -244,7 +246,6 @@
           </div>
         </div>
 
-        <!-- If we need navigation buttons -->
         <div class="pre-btn"><i class="bi bi-chevron-left"></i></div>
         <div class="next-btn">
           <i class="bi bi-chevron-right"></i>
