@@ -30,7 +30,7 @@
 .banner .banner_container {
   max-width: 768px;
   padding: 3% 0;
-  margin: 0 auto;
+  margin: 0 155px;
   width: 100%;
 }
 
@@ -39,7 +39,7 @@
   padding: 48px 64px 95px;
   width: 100%;
   height: 327px;
-  margin: auto;
+  margin: 0 auto;
   background-color: #f8f7f9;
   border: 1px solid #dddfe2;
   border-radius: 16px;
@@ -86,7 +86,7 @@
   box-shadow: none;
 }
 .homebody {
-  margin: 0 125px 136px;
+  margin: 0 96px 136px;
   padding: 0;
 }
 .homebody .tw-top-cities,
@@ -180,6 +180,7 @@
   width: 100%;
   height: 320px;
 }
+
 .hotels .hotel-wrapper .hotelPage_link .hotel_imgBox {
   width: 263px;
   height: 200px;
@@ -204,19 +205,6 @@
   top: 10px;
   right: 10px;
 }
-footer {
-  height: 237px;
-  background-color: #2a2a2e;
-}
-footer .footer-text {
-  padding: 52px 0;
-  font-size: 14px;
-  width: auto;
-}
-footer .footer-text p {
-  width: 100%;
-  margin: 8px;
-}
 
 /* 手機版 */
 @media screen and (max-width: 991px) {
@@ -224,18 +212,16 @@ footer .footer-text p {
     background-image: url(../images/IndexImgs/phone_bg_homepage.jpg);
     background-size: 100% 100%;
     background-position: 0 0;
-    height: 80vh;
   }
   .banner .banner_container {
-    width: auto;
-    margin: 0px 10px;
+    margin: 0 auto;
     padding-top: 80px;
   }
 
   .banner .banner_container .search-form {
     padding: 0px 10px;
     align-content: center;
-    width: 100%;
+    width: 96%;
   }
   /* .search-form :nth-child(2) span {
     font-size: 12px;
@@ -245,8 +231,8 @@ footer .footer-text p {
     font-weight: 600;
   }
   .homebody {
-    margin: 0;
-    padding: 12px;
+    margin: 0 auto;
+    padding: 0 12px;
   }
   .homebody .tw-top-cities {
     width: 100%;
@@ -254,21 +240,13 @@ footer .footer-text p {
   .hotels .buttons {
     font-size: 8px;
   }
-  .hotels .hotel-wrapper {
-    overflow-x: scroll;
-  }
-  .hotels .hotel-wrapper::-webkit-scrollbar {
-    display: none;
-  }
-  footer .footer-text {
-    width: 350px;
-  }
 }
 /* 桌面版 */
 @media screen and (min-width: 992px) {
   .banner .banner_container {
     max-width: 1124px;
     padding-top: 24px;
+    margin: 0 auto;
   }
   .banner .banner_container .search-form {
     grid-template-columns: repeat(2, 50%);
